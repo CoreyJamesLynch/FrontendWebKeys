@@ -2,14 +2,14 @@ import React from 'react';
 import './App.css';
 
 import Navbar from './Components/Navbar';
+// import MainPage from './Components/MainPageComponents/MainPage';
+// Add Sounds
 
 function App() {
   return (
     <>
       <Navbar />
-      <div>
-        <p>Hello World</p>
-      </div>
+      <div>{/* <MainPage /> */}</div>
     </>
   );
 }
