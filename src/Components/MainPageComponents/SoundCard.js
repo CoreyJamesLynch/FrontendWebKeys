@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Container, Card, Button } from 'react-bootstrap';
+import Container from 'react-bootstrap/Container';
+import Card from 'react-bootstrap/Card';
+import Button from 'react-bootstrap/Button';
 import { propTypes } from 'react-bootstrap/esm/Image';
 
 // Button should turn from green "primary" to red "danger" depending on if sound is active.
