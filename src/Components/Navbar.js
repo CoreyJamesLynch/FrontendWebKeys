@@ -1,9 +1,16 @@
 import React from 'react';
+import Navbar from 'react-bootstrap/Navbar';
 
-const Navbar = () => (
-  <div>
-    <h4>This will be a Navbar</h4>
-  </div>
+const NavigationBar = () => (
+  <Navbar bg="dark" expand="lg">
+    <Navbar.Brand href="/">Web Keys</Navbar.Brand>
+    <Navbar.Toggle aria-controls="basic-navbar-nav" />
+    <Navbar.Collapse className="justify-content-end">
+      <Navbar.Text>
+        <a href="/login">Login/Signup</a>
+      </Navbar.Text>
+    </Navbar.Collapse>
+  </Navbar>
 );
 
-export default Navbar;
+export default NavigationBar;
