@@ -20,9 +20,9 @@ const SoundCard = (props) => (
 
 export default SoundCard;
 
-SoundCard.propTypes = {
-  sound: propTypes.shape({
-    letter: PropTypes.string.isRequired,
-    name: PropTypes.string.isRequired,
-  }),
-};
+// SoundCard.propTypes = {
+//   sound: propTypes.shape({
+//     letter: PropTypes.string.isRequired,
+//     name: PropTypes.string.isRequired,
+//   }),
+// };
