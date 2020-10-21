@@ -8,16 +8,9 @@ import PlaylistCard from './PlaylistCard';
 
 const loggedInUser = 'http://localhost:3000/users/1/';
 const playlists = { id: 1, name: 'testPlaylist', user_id: 1 };
+const user = { id: 1, first_name: 'Corey', last_name: 'Lynch', username: 'bearinawolfpack' };
 
 class ProfilePage extends React.Component {
-  state = { stateUser: [] };
-
-  componentDidMount() {
-    fetch(`${loggedInUser}`)
-      .then((resp) => resp.json())
-      .then((user) => this.setState({ stateUser: user }));
-  }
-
   render() {
     const playlistCards = playlists.map((playlist) => (
       <PlaylistCard key={playlist.id} playlist={playlist} />

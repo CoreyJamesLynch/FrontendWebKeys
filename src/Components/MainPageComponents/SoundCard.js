@@ -6,12 +6,12 @@ import Button from 'react-bootstrap/Button';
 import { propTypes } from 'react-bootstrap/esm/Image';
 
 // Button should turn from green "primary" to red "danger" depending on if sound is active.
-const SoundCard = (props) => (
+const SoundCard = ({ sound }) => (
   <Container>
     <Card>
       <Card.Body>
-        <Card.Title>{props.sound.letter}</Card.Title>
-        <Card.Text>{props.sound.name}</Card.Text>
+        <Card.Title>{sound.letter}</Card.Title>
+        <Card.Text>{sound.name}</Card.Text>
         <Button variant="primary">Play</Button>
       </Card.Body>
     </Card>
@@ -20,9 +20,9 @@ const SoundCard = (props) => (
 
 export default SoundCard;
 
-// SoundCard.propTypes = {
-//   sound: propTypes.shape({
-//     letter: PropTypes.string.isRequired,
-//     name: PropTypes.string.isRequired,
-//   }),
-// };
+SoundCard.propTypes = {
+  sound: PropTypes.shape({
+    letter: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+  }),
+};
