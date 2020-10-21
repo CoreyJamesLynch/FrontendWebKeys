@@ -16,4 +16,4 @@
 
 - A user will also be able to upload or link to their own sounds in place of the default sounds and then save that listing of sounds to their profile after they sign up for a profile.
 
-![https://drive.google.com/file/d/1iHZUrPSfax-DnQD6YRKPbcEVV-ncF2rP/view]
+![Design](https://drive.google.com/file/d/1iHZUrPSfax-DnQD6YRKPbcEVV-ncF2rP/view)
