@@ -6,11 +6,11 @@ import Button from 'react-bootstrap/Button';
 import { propTypes } from 'react-bootstrap/esm/Image';
 
 // Button should turn from green "primary" to red "danger" depending on if playlist is active.
-const PlaylistCard = (props) => (
+const PlaylistCard = ({ playlist }) => (
   <Container>
     <Card>
       <Card.Body>
-        <Card.Title>{props.playlist.name}</Card.Title>
+        <Card.Title>{playlist.name}</Card.Title>
         <Button variant="primary">Load</Button>
       </Card.Body>
     </Card>
@@ -20,7 +20,7 @@ const PlaylistCard = (props) => (
 export default PlaylistCard;
 
 PlaylistCard.propTypes = {
-  playlist: propTypes.shape({
+  playlist: PropTypes.shape({
     name: PropTypes.string.isRequired,
   }),
 };
