@@ -1,4 +1,6 @@
 import React from 'react';
+
+import Sounds from './TestSounds'
 import SoundCard from './SoundCard';
 
 const MainPage = () => <></>;
