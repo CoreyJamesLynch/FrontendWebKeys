@@ -1,10 +1,11 @@
 import React from 'react';
 
-import Sounds from './TestSounds'
+import Sounds from './TestSounds';
 import SoundCard from './SoundCard';
+import Container from 'react-bootstrap/esm/Container';
 
-const MainPage = () => <></>;
-// Make API call here and set equal to sounds
-// const soundCards = sounds.map((sound) => <SoundCard key={sound.id} sound={sound} />);
-// return { soundCards };
+const MainPage = () => {
+  const soundCards = Sounds.map((sound) => <SoundCard key={sound.id} sound={sound} />);
+  return <Container>{soundCards}</Container>;
+};
 export default MainPage;
