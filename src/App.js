@@ -7,7 +7,6 @@ import NavigationBar from './Components/Navbar';
 import MainPage from './Components/MainPageComponents/MainPage';
 import LoginPage from './Components/LoginPageComponents/LoginPage';
 import ProfilePage from './Components/ProfilePageComponents/ProfilePage';
-// Add Sounds
 
 function App() {
   return (

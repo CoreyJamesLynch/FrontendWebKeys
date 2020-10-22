@@ -6,9 +6,15 @@ import Button from 'react-bootstrap/Button';
 
 import PlaylistCard from './PlaylistCard';
 
+const playlists = [
+  { id: 1, name: 'testPlaylist', user_id: 1 },
+  { id: 2, name: 'testPlaylist', user_id: 1 },
+  { id: 3, name: 'testPlaylist', user_id: 1 },
+  { id: 4, name: 'testPlaylist', user_id: 1 },
+];
+
 const loggedInUser = 'http://localhost:3000/users/1/';
-const playlists = { id: 1, name: 'testPlaylist', user_id: 1 };
-const user = { id: 1, first_name: 'Corey', last_name: 'Lynch', username: 'bearinawolfpack' };
+const user = [{ id: 1, first_name: 'Corey', last_name: 'Lynch', username: 'bearinawolfpack' }];
 
 class ProfilePage extends React.Component {
   render() {

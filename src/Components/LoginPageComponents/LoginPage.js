@@ -4,14 +4,24 @@ import Container from 'react-bootstrap/Container';
 import LoginForm from './LoginForm';
 import SignupForm from './SignupForm';
 
-const LoginPage = () => (
-  <Container>
-    {LoginForm}
+class LoginPage extends React.Component {
+  render() {
+    return (
+      <Container>
+        <Container>
+          <LoginForm />
+        </Container>
 
-    <h4>Or</h4>
+        <div>
+          <h4>Or</h4>
+        </div>
 
-    {SignupForm}
-  </Container>
-);
+        <Container>
+          <SignupForm />
+        </Container>
+      </Container>
+    );
+  }
+}
 
 export default LoginPage;
