@@ -7,7 +7,7 @@ const NavigationBar = () => (
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse className="justify-content-end">
       <Navbar.Text>
-        <a href="/login">Login/Signup</a>
+        <a href="/LoginPage">Login/Signup</a>
       </Navbar.Text>
     </Navbar.Collapse>
   </Navbar>
