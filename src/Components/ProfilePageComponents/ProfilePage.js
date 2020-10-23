@@ -3,6 +3,7 @@ import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 import Container from 'react-bootstrap/Container';
 import Button from 'react-bootstrap/Button';
+import Row from 'react-bootstrap/Row';
 
 import PlaylistCard from './PlaylistCard';
 
@@ -77,7 +78,11 @@ class ProfilePage extends React.Component {
             Save
           </Button>
         </Form>
-        <Container>{playlistCards}</Container>
+        <Container>
+          <Row xs={2} md={3} lg={4}>
+            {playlistCards}
+          </Row>
+        </Container>
       </>
     );
   }
