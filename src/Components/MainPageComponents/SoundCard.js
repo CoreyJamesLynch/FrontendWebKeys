@@ -22,3 +22,15 @@ SoundCard.propTypes = {
     name: PropTypes.string.isRequired,
   }),
 };
+
+// -> 'Playing...' : 'Play'
+
+// return (
+//   <Button
+//     variant="primary"
+//     disabled={isLoading}
+//     onClick={!isLoading ? handleClick : null}
+//   >
+//     {isLoading ? 'Loading…' : 'Click to load'}
+//   </Button>
+// );
