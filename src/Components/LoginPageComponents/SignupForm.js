@@ -5,19 +5,19 @@ import Button from 'react-bootstrap/Button';
 
 class SignupForm extends React.Component {
   state = {
-    firstName: "",
-    lastName: "",
-    username: "",
-    reUsername: "",
-    email: "",
-    reEmail: "",
-    password: "",
-    rePassword: "",
-  }
+    firstName: '',
+    lastName: '',
+    username: '',
+    reUsername: '',
+    email: '',
+    reEmail: '',
+    password: '',
+    rePassword: '',
+  };
 
   changeHandler = (event) => {
-    this.setState({[event.target.name]: event.target.value})
-  }
+    this.setState({ [event.target.name]: event.target.value });
+  };
 
   render() {
     return (
