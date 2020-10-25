@@ -8,7 +8,7 @@ class LoginForm extends React.Component {
       <Form>
         <Form.Group controlId="formBasicEmail">
           <Form.Label>Username</Form.Label>
-          <Form.Control type="username" placeholder="Enter username" />
+          <Form.Control type="username" placeholder="Enter username"  />
         </Form.Group>
 
         <Form.Group controlId="formBasicPassword">
