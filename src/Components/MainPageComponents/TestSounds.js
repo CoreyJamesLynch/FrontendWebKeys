@@ -1,5 +1,3 @@
-import React from 'react';
-
 const Sounds = [
   { name: 'Test', source: 'testsounds.com/test_siren', letter: 'A', length: 3 },
   { name: 'Test', source: 'testsounds.com/test_siren', letter: 'B', length: 3 },
