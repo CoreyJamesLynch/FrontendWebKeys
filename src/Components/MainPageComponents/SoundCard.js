@@ -1,15 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Card from 'react-bootstrap/Card';
-import Button from 'react-bootstrap/Button';
 
-// Button should turn from green "primary" to red "danger" depending on if sound is active.
+import LoadingButton from './LoadingButton';
+
 const SoundCard = ({ sound }) => (
   <Card bg="dark" text="light" border="warning">
     <Card.Body>
       <Card.Title>{sound.letter}</Card.Title>
       <Card.Text>{sound.name}</Card.Text>
-      <Button variant="success">Play</Button>
+      <LoadingButton>Play</LoadingButton>
     </Card.Body>
   </Card>
 );
@@ -22,15 +22,3 @@ SoundCard.propTypes = {
     name: PropTypes.string.isRequired,
   }),
 };
-
-// -> 'Playing...' : 'Play'
-
-// return (
-//   <Button
-//     variant="primary"
-//     disabled={isLoading}
-//     onClick={!isLoading ? handleClick : null}
-//   >
-//     {isLoading ? 'Loading…' : 'Click to load'}
-//   </Button>
-// );
